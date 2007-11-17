@@ -1,6 +1,6 @@
 %define module	Crypt-Rijndael
 %define name	perl-%{module}
-%define version	1.04
+%define version	1.05
 %define release	%mkrel 1
 
 Name:		%{name}
@@ -9,11 +9,10 @@ Release:	%{release}
 Summary:	Crypt::CBC compliant Rijndael encryption module
 License:	GPL or Artistic
 Group:		Development/Perl
-Source:		http://search.cpan.org/CPAN/authors/id/D/DI/DIDO/%{module}-%{version}.tar.bz2
 Url:            http://search.cpan.org/dist/%{module}/
-Source0:	Crypt-Rijndael-%{version}.tar.bz2
+Source:         http://www.cpan.org/modules/by-module/Crypt/%{module}-%{version}.tar.gz
 BuildRequires:	perl-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}
+BuildRoot:	    %{_tmppath}/%{name}-%{version}
 
 %description
 This module implements the Rijndael cipher, which has just been selected as the
