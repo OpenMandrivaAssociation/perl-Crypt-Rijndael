@@ -12,7 +12,6 @@ Group:		Development/Perl
 Url:            http://search.cpan.org/dist/%{module}/
 Source:         http://www.cpan.org/modules/by-module/Crypt/%{module}-%{version}.tar.gz
 BuildRequires:	perl-devel
-BuildRoot:	    %{_tmppath}/%{name}-%{version}
 
 %description
 This module implements the Rijndael cipher, which has just been selected as the
