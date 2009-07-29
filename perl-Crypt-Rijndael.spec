@@ -1,25 +1,25 @@
-%define module	Crypt-Rijndael
-%define name	perl-%{module}
-%define version	1.07
-%define release	%mkrel 1
+%define upstream_name	 Crypt-Rijndael
+%define upstream_version 1.07
 
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
 Summary:	Crypt::CBC compliant Rijndael encryption module
-License:	GPL or Artistic
+License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:            http://search.cpan.org/dist/%{module}/
-Source:         http://www.cpan.org/modules/by-module/Crypt/%{module}-%{version}.tar.gz
+Url:        http://search.cpan.org/dist/%{upstream_name}/
+Source0:    http://www.cpan.org/modules/by-module/Crypt/%{upstream_name}-%{upstream_version}.tar.gz
+
 BuildRequires:	perl-devel
-BuildRoot:	    %{_tmppath}/%{name}-%{version}
+BuildRoot:	    %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 This module implements the Rijndael cipher, which has just been selected as the
 Advanced Encryption Standard.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor CFLAGS="%{optflags}"
@@ -41,5 +41,3 @@ rm -rf %{buildroot}
 %{perl_vendorarch}/Crypt
 %{perl_vendorarch}/auto/Crypt
 %{_mandir}/man3*/*
-
-
