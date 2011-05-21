@@ -22,7 +22,7 @@ Advanced Encryption Standard.
 %setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
-%{__perl} Makefile.PL INSTALLDIRS=vendor CFLAGS="%{optflags}"
+%{__perl} Makefile.PL INSTALLDIRS=vendor
 %make
 
 %check
