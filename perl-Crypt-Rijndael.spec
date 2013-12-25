@@ -1,14 +1,14 @@
 %define modname	Crypt-Rijndael
-%define modver	1.09
+%define modver 1.11
 
 Summary:	Crypt::CBC compliant Rijndael encryption module
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	11
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}/
-Source0:	http://www.cpan.org/modules/by-module/Crypt/%{modname}-%{modver}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Crypt/Crypt-Rijndael-%{modver}.tar.gz
 BuildRequires:	perl-devel
 
 %description
@@ -33,4 +33,5 @@ Advanced Encryption Standard.
 %{perl_vendorarch}/Crypt
 %{perl_vendorarch}/auto/Crypt
 %{_mandir}/man3*/*
+
 
