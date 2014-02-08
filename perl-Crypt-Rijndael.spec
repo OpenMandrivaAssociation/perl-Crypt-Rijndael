@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 7
+Release:    8
 
 Summary:	Crypt::CBC compliant Rijndael encryption module
 License:	GPL+ or Artistic
