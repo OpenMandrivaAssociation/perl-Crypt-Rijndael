@@ -1,5 +1,5 @@
 %define modname	Crypt-Rijndael
-%define modver 1.11
+%define modver 1.12
 
 Summary:	Crypt::CBC compliant Rijndael encryption module
 Name:		perl-%{modname}
@@ -33,5 +33,6 @@ Advanced Encryption Standard.
 %{perl_vendorarch}/Crypt
 %{perl_vendorarch}/auto/Crypt
 %{_mandir}/man3*/*
+
 
 

@@ -1,4 +1,5 @@
 removed_sources:
   Crypt-Rijndael-1.09.tar.gz: 2edc7836a62c01c6db668586f907f8f57170a970
-sources:
   Crypt-Rijndael-1.11.tar.gz: 4875b0ad3d0322081e9f4e2b8898c027c05fa350
+sources:
+  Crypt-Rijndael-1.12.tar.gz: 3968e24345869dec4e55d3ef9af679d89c458a8a
