@@ -1,4 +1,7 @@
-%define modname	Crypt-Rijndael
+# Work around incomplete debug packages
+%global _empty_manifest_terminate_build 0
+
+%define modname Crypt-Rijndael
 %define modver 1.12
 
 Summary:	Crypt::CBC compliant Rijndael encryption module
@@ -17,23 +20,20 @@ This module implements the Rijndael cipher, which has just been selected as the
 Advanced Encryption Standard.
 
 %prep
-%setup -qn %{modname}-%{modver}
+%autosetup -n %{modname}-%{modver} -p1
 
 %build
-%{__perl} Makefile.PL INSTALLDIRS=vendor
-%make
+perl Makefile.PL INSTALLDIRS=vendor
+%make_build
 
 %check
 %make test
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %doc NEWS README
 %{perl_vendorarch}/Crypt
 %{perl_vendorarch}/auto/Crypt
-%{_mandir}/man3*/*
-
-
-
+%doc %{_mandir}/man3*/*
