@@ -7,7 +7,7 @@
 Summary:	Crypt::CBC compliant Rijndael encryption module
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	10
+Release:	11
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		https://search.cpan.org/dist/%{modname}/
