@@ -2,16 +2,16 @@
 %global _empty_manifest_terminate_build 0
 
 %define modname Crypt-Rijndael
-%define modver 1.12
+%define modver 1.16
 
 Summary:	Crypt::CBC compliant Rijndael encryption module
 Name:		perl-%{modname}
-Version:	%perl_convert_version %{modver}
-Release:	12
+Version:	%{modver}
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{modname}/
-Source0:	http://www.cpan.org/modules/by-module/Crypt/Crypt-Rijndael-%{modver}.tar.gz
+Url:		https://github.com/leont/crypt-rijndael
+Source0:	https://cpan.metacpan.org/authors/id/L/LE/LEONT/Crypt-Rijndael-%{modver}.tar.gz
 BuildRequires:	make
 BuildRequires:	perl(Test::More)
 BuildRequires:	perl-devel
